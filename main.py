@@ -47,9 +47,22 @@ for t in range(2):
         base = orig
         matrix_mult(scaley, base)
         matrix_mult(scalex, base)
-        print_matrix(base)
+        # print_matrix(base)
         matrix = []
         for item in base:
             matrix.append(item)
+
+A = {[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]}
+B = {[11,12,13,14],[15,16,17,18],[19,20,21,22],[23,24,25,26]}
+ident = new_matrix()
+ident(ident)
+matrix_mult(A,B)
+print_matrix(A)
+print_matrix(B)
+matrix_mult(B,A)
+print_matrix(A)
+print_matrix(B)
+matrix_mult(ident,A)
+print_matrix(A)
 
 display(screen)
